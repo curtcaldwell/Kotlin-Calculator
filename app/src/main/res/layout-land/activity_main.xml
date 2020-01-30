@@ -208,4 +208,12 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.500684" />
 
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMultiply"
+        app:layout_constraintStart_toStartOf="@+id/buttonNeg" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

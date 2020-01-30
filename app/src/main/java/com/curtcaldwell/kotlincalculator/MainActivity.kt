@@ -59,6 +59,16 @@ class MainActivity : AppCompatActivity() {
             operation.text = pendingOperation
         }
 
+        buttonClear.setOnClickListener{
+
+            operand1 = null
+            pendingOperation = "="
+            operation.text = pendingOperation
+            new_number.text.clear()
+            result.text.clear()
+
+        }
+
 
 
         buttonEquals.setOnClickListener(opListener)
@@ -117,6 +127,8 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
+
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         if(operand1 != null){
@@ -138,6 +150,8 @@ class MainActivity : AppCompatActivity() {
 
         operation.text = pendingOperation
     }
+
+
 
 
 
